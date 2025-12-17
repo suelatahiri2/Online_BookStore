@@ -60,6 +60,26 @@ header nav ul li a {
     transform: scale(1);
 }
 
+.nav{
+    position: absolute; 
+    top: 50%;
+    background-color: #00000080;
+    color: white;
+    border: none;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+.nav.prev{
+    left: 15px;
+}
+
+.nav.next{
+    right: 15px;
+}
+
 
 @media (max-width: 768px) {
     .slider {
