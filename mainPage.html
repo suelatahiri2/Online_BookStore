@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BookStore - Home</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="mainPage.css">
 </head>
 
 <body>
@@ -17,24 +18,30 @@
                 <li><a href="books.html">Books</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="admin.html">Admin</a></li>
-
-
             </ul>
-        </nav> 
+        </nav>
     </header>
 
-   <main>
-     <section class="slider">
-        <img id="sliderImage" src="images/img1.jpg">
-        <img id="sliderImage" src="images/img2.jpg">
+    <main>
+        <div class="slider-container">
+            <button class="nav prev" onclick="prevSlide()">❮</button>
 
-     </section>
-
-   </main>
+            <div class="slider">
+            <div class="slides">
+                <img id="sliderImage" src="images/img1.jpg">
+                <img id="sliderImage" src="images/img2.jpg">
+                <img id="sliderImage" src="images/img3.jpg">
+            </div>
+        </div>
+ 
+        <button class="nav next" onclick="nextSlide()">❯</button>
+      </div>
+      
+    </main>
     <footer>
-<p>&copy; 2025 Online Book Store</p>
+        <p>&copy; 2025 Online Book Store</p>
 
-</footer>
+    </footer>
 
 
 </body>
