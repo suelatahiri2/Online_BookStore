@@ -2,22 +2,15 @@ let slides = document.querySelectorAll(".slide");
 let currentIndex = 0;
    
    
-   function nextSlide(){
-    if(currentIndex < slides.length - 1){
-        currentIndex++;
-    }else{
-        currentIndex = 0;
-    }
+window.nextSlide = function(){
+   currentIndex(currentIndex +1 ) % slides.length;
+    
     updateSlider();
 }
 
-function prevSlide(){
-    if(currentIndex > 0){
-       currentIndex--;
-    }else{
-        currentIndex = slides.length - 1;
-    }
-    updateSlider
+window.prevSlide = function (){
+    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+    updateSlider();
 }
 function updateSlider(){
      slides.forEach ((slide, index) => {
@@ -25,8 +18,8 @@ function updateSlider(){
         if(index === currentIndex){
             slide.classList.add("active");
         }
-    }
-});
+    });
+};
 
 setInterval(() => {
     nextSlide();
