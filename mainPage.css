@@ -1,11 +1,11 @@
-{
-    margin 0;
-    padding 0;
-    box-sizing : border-box;
+* {
+    margin :0;
+    padding :0;
+    box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
 
-header{
+header {
     background-color: #ff4d4d;
     color: white;
     padding: 20px;
@@ -13,39 +13,45 @@ header{
     justify-content: space-between;
     align-items: center;
 }
+
 header.logo {
     font-size: 1.5em;
     font-weight: bold;
-} header nav ul{
+}
+
+header nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
 }
-header nav ul li a{
-   color: white; 
-   text-decoration: none;
-   font-weight: bold;
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.slider{
+.slider {
     position: relative;
     width: 100%;
     max-width: 1000px;
-  margin: 20px auto;
-  overflow: hidden;
-  border-radius: 10px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
 
 }
 
-.slides img{
+.slides img {
     width: 100%;
     display: none;
 }
+
 .slides img.active {
     display: block;
 
 }
-.slider button{
+
+.slider button {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -55,6 +61,5 @@ header nav ul li a{
     padding: 10px;
     cursor: pointer;
     font-size: 2em;
-    
 
 }
