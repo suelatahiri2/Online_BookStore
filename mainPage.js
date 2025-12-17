@@ -1,5 +1,8 @@
-
-    function nextSlide(){
+let slides = document.querySelectorAll(".slide");
+let currentIndex = 0;
+   
+   
+   function nextSlide(){
     if(currentIndex < slides.length - 1){
         currentIndex++;
     }else{
@@ -16,3 +19,18 @@ function prevSlide(){
     }
     updateSlider
 }
+function updateSlider(){
+     slides.forEach ((slide, index) => {
+        slide.classList.remove("active");
+        if(index === currentIndex){
+            slide.classList.add("active");
+        }
+    }
+});
+
+setInterval(() => {
+    nextSlide();
+}, 4000);
+
+updateSlider();
+
