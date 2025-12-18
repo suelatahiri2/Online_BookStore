@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store</title>
+    <link rel="stylesheet" href="mainPage.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Book Store</h1>
+        <nav>
+            <ul>
+                <li><a href="mainPage.html">Home</a></li>
+                <li><a href="aboutPage.html" class="active">About</a></li>
+                <li><a href="booksPage.html">Books</a></li>
+                <li><a href="contactpage.html">Contact</a></li>
+                <li><a href="admin.html">Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="books-layout">
+        <aside class="sidebar">
+            <h3>Categories</h3>
+            <ul>
+                <li onclick="filterBooks ('all')">All</li>
+                <li onclick="filterBooks ('fiction')">Fiction</li>
+                <li onclick="filterBooks ('non-fiction')">None-Fiction</li>
+                <li onclick="filterBooks ('children')">Children</li>
+                <li onclick="filterBooks ('academic')">Academic</li>
+                <li onclick="filterBooks ('business')">Business</li>
+            </ul>
+        </aside>
+        <section class="books-content">
+            <div class="books-hero">
+                <h2>Discover Your Next Book</h2>
+                <p>Explore our collection of best-selling books</p>
+
+            </div>
+            <input type="text " id="searchInput" placeholder="Search book ..." onkeyup="searchBooks ()"
+                class="search-bar">
+            <div class="books-grid">
+                <div class="book-card" data-category="fiction">
+                <img src="images/book1.jpg">
+                <h4>Fiction Book</h4>
+                <p>Author Name</p>
+                <span>$15.99</span>
+                <button onclick="addToCart()">Add to Cart</button>
+            </div>
+            </div>
+            <div class="book-card" data-category="non-fiction">
+                <img src="images/book2.jpg">
+                <h4>Non-Fiction</h4>
+                <p>Author Name</p>
+                <span>$18.99</span>
+                <button onclick="addToCart()">Add to Cart</button>
+            </div>
+            
+
+             <div class="book-card" data-category="children">
+                <img src="images/book3.jpg">
+                <h4>Children </h4>
+                <p>Author Name</p>
+                <span>$11.99</span>
+                <button onclick="addToCart()">Add to Cart</button>
+
+</div>
+            <div class="book-card" data-category="academic">
+                <img src="images/book4.jpg">
+                <h4>Academic Book</h4>
+                <p>Author Name</p>
+                <span>$23.99</span>
+                <button onclick="addToCart()">Add to Cart</button>
+
+            </div>
+
+             <div class="book-card" data-category="business">
+                <img src="images/book5.jpg">
+                <h4>Bussines Book</h4>
+                <p>Author Name</p>
+                <span>$18.67</span>
+                <button onclick="addToCart()">Add to Cart</button>
+        </section>
+
+
+    </main>
+    <footer>
+        <p>&copy; 2025 Online Book Store</p>
+    </footer>
+    <script src="mainPage.js"></script>
+</body>
+
+</html>
