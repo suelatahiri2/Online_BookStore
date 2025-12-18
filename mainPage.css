@@ -225,7 +225,7 @@ main{
 .about-text ul {
     list-style-type: disc;
     padding-left: 20px;
-    font-size: ;
+    font-size: 20px;
     line-height: 25px;
     color: black;
 }
