@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookStore - Contact</title>
+    <link rel="stylesheet" href="mainPage.css">
+</head>
+<body>
+    <header>
+        <h1>BookStore</h1>
+        <nav>
+            <ul>
+                <li><a href="mainPage.html">Home</a></li>
+                <li><a href="aboutPage.html">About</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="admin.html">Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <h2>Na Kontaktoni</h2>
+            <p>Plotesoni formularin me poshte dhe ne do t'ju kontaktojme sa me shpejt te jet e mundur.</p>
+
+            <form id="contactForm">
+                <label for="name">Emri</label>
+                <input type="text" id="name" name="name" placeholder="Shkruani emrin tuaj" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Shkruani email-in tuaj" required>
+
+                <label for="subject">Subjekti</label>
+                <input type="text" id="subject" name="subject" placeholder="Subjekti i mesazhit" required>
+
+                <label for="message">Mesazhi: </label>
+                <textarea id="message" name="message" placeholder="Shkruani Mesazhin tuaj " rows="5" required></textarea>
+                
+
+                <button type="submit">Dergo</button>
+            </form>
+
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Online Book Store </p>
+    </footer>
+
+    <script src="mainPage.js"></script>
+</body>
+</html> 
