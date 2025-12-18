@@ -21,3 +21,15 @@ function changeSlide(step){
     showSlide();
 }
 showSlide();
+
+//loginform
+
+function Login(){
+    document.getElementById("LoginBox").style.display = "none";
+    document.getElementById("profileBox").style.display = "block";
+}
+
+function logout(){
+    document.getElementById("profileBox").style.display = "none";
+    document.getElementById("LoginBox").style.display = "block";
+}

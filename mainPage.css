@@ -12,7 +12,7 @@ body {
 }
 
 header {
-    background-color: #ff4d4d;
+    background-color: brown;
     color: white;
     padding: 20px;
     display: flex;
@@ -37,6 +37,17 @@ header nav ul li a {
     font-weight: bold;
 }
 
+.profile header nav{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.profile header nav a{
+    color: white;
+    font-weight: bold;
+}
+
 .slider-container {
     position: relative;
     width: 100%;
@@ -54,7 +65,6 @@ header nav ul li a {
 }
 
 .slide {
-
     width: 100%;
     height: 500px;
     min-width: 80%;
@@ -67,8 +77,8 @@ header nav ul li a {
 }
 
 .slider img {
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: auto;
     display: block;
 }
 
@@ -118,11 +128,13 @@ header nav ul li a {
 
 main{
     margin-top: 15px;
-    flex-wrap: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
-.footer.p {
+.footer {
     display: flex;
     justify-content: end;
     align-items: end;
@@ -137,7 +149,7 @@ main{
     border: none;
     padding: 10px;
     cursor: pointer;
-    font-size: 2em;
+    font-size: 12px;
 
 }
 
@@ -155,24 +167,13 @@ main{
 .about-section h3 {
     margin-top: 30px;
     margin-bottom: 10px;
-    color: ff8000;
-    color: #ff8000;
+    color: red;
 
 }
 
 .about-section ul {
-    list-style-type: disc;
     padding-left: 20px;
 }
-
-.about-section img.about-img {
-    width: 100%;
-    max-width: 600px;
-    display: block;
-    margin: 30px auto;
-    border-radius: 12px;
-}
-
 
 .profile {
     width: 400px;
@@ -203,28 +204,30 @@ main{
 
 .about-text h2 {
     color: #ff4d4d;
-    font-size: 2.5em;
+    font-size: 50px;
     margin-bottom: 20px;
 }
 
 .about-text h3 {
-    color: #ff8000;
-    font-size: 1.5em;
-    margin-top: 30px;
+    color: #ff4d4d;
+    font-size: 30px;
+    margin-top: 70px;
     margin-bottom: 10px;
 }
 
 .about-text p {
-    font-size: 1.1em;
-    line-height: 1.6;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
     color: #333;
 }
 
 .about-text ul {
     list-style-type: disc;
     padding-left: 20px;
-    font-size: 1em;
-    color: #555;
+    font-size: ;
+    line-height: 25px;
+    color: black;
 }
 
 .about-image {
@@ -238,4 +241,61 @@ main{
     border-radius: 15px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0, 2);
     display: block;
+}
+
+.login-box h2{
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #8b0000;
+}
+
+.login-box{
+    width: 350px;
+    height:  300px;
+    min-height: 420px;
+    padding: 40px 35px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    margin: 100px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-box input{
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border-radius: 6px;
+    border: 1px solid ;
+    font-size: 16px;
+}
+
+.login-box button{
+    width: 100%;
+    height: 50px;
+    padding: 14px;
+    margin-top: 25px;
+    background-color: #8b0000;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-box button:hover{
+    background-color: #a30000;
+}
+
+.foto{
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.7;
 }
