@@ -131,7 +131,11 @@ header nav ul li a {
 .about-section h3{
     margin-top: 30px;
     margin-bottom: 10px;
+<<<<<<< HEAD
     color: ff8000;
+=======
+    color: #ff8000;
+>>>>>>> dd20fcdfa42be245a9cb69f1ee89b85be05858f8
 }
 .about-section ul{
     list-style-type: disc;
@@ -144,6 +148,7 @@ header nav ul li a {
     margin: 30px auto;
     border-radius: 12px;
 }
+<<<<<<< HEAD
 
 
 .profile{
@@ -158,4 +163,48 @@ header nav ul li a {
 }
 .profile button{
     margin-top: 10px;
+=======
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+}
+.about-text{
+    flex: 1;
+    min-width: 300px;
+}
+.about-text h2{
+    color: #ff4d4d;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+.about-text h3{
+    color: #ff8000;
+    font-size: 1.5em;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.about-text p{
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #333;
+}
+.about-text ul{
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 1em;
+    color: #555;
+}
+.about-image{
+    flex: 1;
+    min-width: 300px;
+
+}
+.about-image img{
+    width: 100%;
+    border-radius: 15px;
+    box-shadow:0 8px 20px rgba(0,0,0,0,2);
+    display: block;
+>>>>>>> dd20fcdfa42be245a9cb69f1ee89b85be05858f8
 }
