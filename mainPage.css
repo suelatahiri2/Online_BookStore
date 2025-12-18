@@ -344,36 +344,41 @@ main {
     margin: 50px auto;
     padding: 0 20px;
     text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .contact-section h2 {
     color:  brown;
-    font-size: 2.2em;
-    margin-bottom: 15px;
+    font-size: 2.4em;
+    margin-bottom: 10px;
 }
 
 .contact-section p {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     font-size: 1.1em;
-    color: #333;
+    color: #555;
+    line-height: 2.6;
 }
 
 #contactFrom {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 25px;
     text-align: left;
 }
 
 #conctactForm label {
-    font-weight: bold;
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: block;
+    font-size: 1.05em;
 }
 
 #contactForm input,
 #contactForm textarea {
-    padding: 12px;
+    padding: 14px 16px;
     border: 1px solid #ccc;
-    border-radius: 8px;
+    border-radius: 10px;
     font-size: 1em;
     width: 100%;
     box-sizing: border-box;
@@ -385,6 +390,7 @@ main {
 #contactForm textarea:focus {
     border: 2px solid  brown;
     outline: none;
+    box-shadow: 0 0 5px rgba(165, 42, 42, 0.4);
 
 }
 
@@ -392,16 +398,19 @@ main {
     background-color:  brown;
     color: white;
     border: none;
-    padding: 14px;
+    padding: 16px;
     font-size: 1.1em;
-    border-radius: 8px;
+    border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    width: 200px;
+    align-self: center;
 
 }
 
 #contactForm button:hover {
     background-color: #ff1a1a;
+    transform: translateY(-2px);
 
 }
 
