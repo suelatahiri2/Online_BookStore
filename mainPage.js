@@ -21,7 +21,6 @@ function changeSlide(step){
     showSlide();
 }
 showSlide();
-<<<<<<< HEAD
 
 //loginform
 
@@ -33,7 +32,8 @@ function Login(){
 function logout(){
     document.getElementById("profileBox").style.display = "none";
     document.getElementById("LoginBox").style.display = "block";
-=======
+}
+
 function filterBooks(category){
     const books =document.querySelectorAll(".book-card");
 
@@ -60,5 +60,4 @@ function searchBooks (){
 
 function addToCart(){
     alert("Book added to cart!")
->>>>>>> 9ff81f0a6f59dad92854c9684c7d250c0987d0bd
 }
