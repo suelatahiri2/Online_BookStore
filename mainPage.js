@@ -21,3 +21,30 @@ function changeSlide(step){
     showSlide();
 }
 showSlide();
+function filterBooks(category){
+    const books =document.querySelectorAll(".book-card");
+
+    books.forEach(book =>{
+        if(category === "all" || book.CDATA_SECTION_NODE.category === category){
+            book.style.display= "block"
+        } else{
+            book.style.display="none";
+
+        }
+    })
+}
+
+function searchBooks (){
+    const inpput= document.getElementById("searchInput").value.toLowerCase();
+    const books = document.querySelectorAll(".book-card");
+    books.forEach(book =>{
+        const title = book.querySelector("h4").innerText.toLowerCase();
+        book.style.display = title.includes (input) ? "block" :"none";
+
+    });
+
+}
+
+function addToCart(){
+    alert("Book added to cart!")
+}
