@@ -122,11 +122,7 @@ header nav ul li a {
     }
 }
 
-<<<<<<< HEAD
 main {
-=======
-main{
->>>>>>> 123fcc523485c6b685a713522ebcabb4f6a490af
     margin-top: 15px;
     display: flex;
     justify-content: center;
@@ -139,11 +135,8 @@ main{
     justify-content: end;
     align-items: end;
 }
-<<<<<<< HEAD
 
 
-=======
->>>>>>> 123fcc523485c6b685a713522ebcabb4f6a490af
 .slider button {
     position: absolute;
     top: 50%;
@@ -171,12 +164,8 @@ main{
 .about-section h3 {
     margin-top: 30px;
     margin-bottom: 10px;
-<<<<<<< HEAD
 color: red;
 
-=======
-    color: red;
->>>>>>> 123fcc523485c6b685a713522ebcabb4f6a490af
 }
 
 .about-section ul {
@@ -196,18 +185,12 @@ color: red;
 
 .profile button {
     margin-top: 10px;
-<<<<<<< HEAD
     color: #ff8000;
 }
 
 
 
 .about-section ul {
-=======
-}
-
-.about-section ul{
->>>>>>> 123fcc523485c6b685a713522ebcabb4f6a490af
     list-style-type: disc;
     padding-left: 20px;
 }
@@ -219,10 +202,7 @@ color: red;
     margin: 30px auto;
     border-radius: 12px;
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> 123fcc523485c6b685a713522ebcabb4f6a490af
 .about-container {
     display: flex;
     flex-wrap: wrap;
@@ -331,12 +311,7 @@ color: red;
     z-index: -1;
     opacity: 0.7;
 }
-<<<<<<< HEAD
 .contact-section {
-=======
-
-.contact-section{
->>>>>>> 123fcc523485c6b685a713522ebcabb4f6a490af
     max-width: 700px;
     margin: 50px auto;
     padding: 0 20px;
@@ -407,12 +382,8 @@ color: red;
         padding: 0 15px;
     }
 }
-<<<<<<< HEAD
 
-.books-layout {
-=======
-.books-layout{
->>>>>>> 123fcc523485c6b685a713522ebcabb4f6a490af
+<<<<<<< HEAD>>>>>>>6655c0905304a9f3f8ee5b66954866ff52ea2d3f=======.books-layout {
     display: flex;
     gap: 30px;
     padding: 30px;
@@ -502,9 +473,6 @@ color: red;
     padding: 10px;
     border-radius: 8px;
     cursor: pointer;
-<<<<<<< HEAD
 }
 
-=======
-}
->>>>>>> 123fcc523485c6b685a713522ebcabb4f6a490af
+>>>>>>>9ff81f0a6f59dad92854c9684c7d250c0987d0bd
