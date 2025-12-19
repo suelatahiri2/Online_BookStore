@@ -88,8 +88,6 @@ function logout(){
 
     profileBox.style.display = "none";
     loginBox.style.display = "block";
-<<<<<<< HEAD
->>>>>>> ecd8e4d245b7b54b670f9c53aaa8be615fcd1489
 }
 const contactForm = document.getElementById("contactForm");
 
@@ -116,6 +114,4 @@ if (contactForm){
         contactForm.reset();
     }
 )
-=======
->>>>>>> ce3e5d95072f381526f375b0774b92bd9875362d
 }

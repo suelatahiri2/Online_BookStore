@@ -691,3 +691,10 @@ main {
     transform: translateY(-2px);
     
 }
+<<<<<<< HEAD
+=======
+
+#contactForm.sent .contact-alert {
+    display: block;
+}
+>>>>>>> 1ff9bb6ff7816f9b3bf50a34b5814767b4af7346
