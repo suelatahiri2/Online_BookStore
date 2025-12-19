@@ -6,7 +6,7 @@
 }
 
 header {
-    background-color:  brown;
+    background-color: brown;
     color: white;
     padding: 20px;
     display: flex;
@@ -122,7 +122,7 @@ header nav ul li a {
     }
 }
 
-main {
+main{
     margin-top: 15px;
     display: flex;
     justify-content: center;
@@ -135,8 +135,6 @@ main {
     justify-content: end;
     align-items: end;
 }
-
-
 .slider button {
     position: absolute;
     top: 50%;
@@ -151,52 +149,24 @@ main {
 }
 
 .about-section {
-    max-width: 900px;
+    max-width: 1000px;
     margin: 50px auto;
     padding: 0 20px;
-    text-align: center;
 }
 
 .about-section h2 {
-    color:  brown;
-    font-size: 3em;
+    color: #ff4d4d;
     margin-bottom: 20px;
-    font-weight: bold;
 }
 
 .about-section h3 {
-    color:  brown;
     margin-top: 30px;
-    font-size: 1.8em;
     margin-bottom: 10px;
-
+    color: red;
 }
 
 .about-section ul {
-    list-style: disc inside;
-    font-size: 1.1em;
-    line-height: 1.6;
-    color: #555;
-    margin-bottom: 40px;
-}
-
-@media (max-width: 768px) {
-    .about-section {
-        padding: 0 15px;
-    }
-
-    .about-section h2 {
-        font-size: 2.2em;
-    }
-
-    .about-section h3 {
-        font-size: 1.5em;
-    }
-
-    .about-section p,
-    .about-section ul {
-        font-size: 1em;
-    }
+    padding-left: 20px;
 }
 
 .profile {
@@ -212,9 +182,9 @@ main {
 
 .profile button {
     margin-top: 10px;
-    color:  brown;
 }
 
+<<<<<<< HEAD
 .about-section{
     background-color: #a35d4c;
     border-radius: 40px;
@@ -222,6 +192,9 @@ main {
 }
 
 .about-section ul {
+=======
+.about-section ul{
+>>>>>>> ecd8e4d245b7b54b670f9c53aaa8be615fcd1489
     list-style-type: disc;
     padding-left: 20px;
 }
@@ -233,7 +206,6 @@ main {
     margin: 10px auto;
     border-radius: 12px;
 }
-
 .about-container {
     display: flex;
     flex-wrap: wrap;
@@ -251,13 +223,13 @@ main {
 }
 
 .about-text h2 {
-    color:  brown;
+    color: #ff4d4d;
     font-size: 50px;
     margin-bottom: 20px;
 }
 
 .about-text h3 {
-    color:  brown;
+    color: #ff4d4d;
     font-size: 30px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -297,7 +269,7 @@ main {
 .login-box h2 {
     margin-bottom: 20px;
     font-size: 24px;
-    color:  brown;
+    color: #8b0000;
 }
 
 .login-box {
@@ -351,46 +323,41 @@ main {
     opacity: 0.7;
 }
 
-.contact-section {
+.contact-section{
     max-width: 700px;
     margin: 50px auto;
     padding: 0 20px;
     text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .contact-section h2 {
-    color:  brown;
-    font-size: 2.4em;
-    margin-bottom: 10px;
+    color: #ff4d4d;
+    font-size: 2.2em;
+    margin-bottom: 15px;
 }
 
 .contact-section p {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     font-size: 1.1em;
-    color: #555;
-    line-height: 2.6;
+    color: #333;
 }
 
 #contactFrom {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 15px;
     text-align: left;
 }
 
 #conctactForm label {
-    font-weight: 600;
-    margin-bottom: 5px;
-    display: block;
-    font-size: 1.05em;
+    font-weight: bold;
 }
 
 #contactForm input,
 #contactForm textarea {
-    padding: 14px 16px;
+    padding: 12px;
     border: 1px solid #ccc;
-    border-radius: 10px;
+    border-radius: 8px;
     font-size: 1em;
     width: 100%;
     box-sizing: border-box;
@@ -400,29 +367,25 @@ main {
 
 #contactForm input:focus,
 #contactForm textarea:focus {
-    border: 2px solid  brown;
+    border: 2px solid #ff4d4d;
     outline: none;
-    box-shadow: 0 0 5px rgba(165, 42, 42, 0.4);
 
 }
 
 #contactForm button {
-    background-color:  brown;
+    background-color: #ff4d4d;
     color: white;
     border: none;
-    padding: 16px;
+    padding: 14px;
     font-size: 1.1em;
-    border-radius: 10px;
+    border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    width: 200px;
-    align-self: center;
 
 }
 
 #contactForm button:hover {
     background-color: #ff1a1a;
-    transform: translateY(-2px);
 
 }
 
@@ -431,7 +394,11 @@ main {
         padding: 0 15px;
     }
 }
+<<<<<<< HEAD
 .books-layout {
+=======
+.books-layout{
+>>>>>>> ecd8e4d245b7b54b670f9c53aaa8be615fcd1489
     display: flex;
     gap: 30px;
     padding: 30px;
@@ -449,7 +416,7 @@ align-items: flex-start;
 
 .sidebar h3 {
     margin-bottom: 15px;
-    color:  brown;
+    color: #ff4d4d;
 }
 
 .sidebar ul {
@@ -464,7 +431,7 @@ align-items: flex-start;
 }
 
 .sidebar ul li:hover {
-    background:  brown;
+    background: #ff4d4d;
     color: white;
 }
 
@@ -473,7 +440,7 @@ align-items: flex-start;
 }
 
 .books-hero {
-    background: linear-gradient(to right, brown, #ff80008e);
+    background: linear-gradient(to right, #ff4d4d, #ff8000);
     color: white;
     padding: 40px;
     border-radius: 15px;
@@ -513,7 +480,7 @@ align-items: flex-start;
 }
 
 .book-card button {
-    background:  brown;
+    background: #ff4d4d;
     color: white;
     border: none;
     padding: 10px;
@@ -521,15 +488,64 @@ align-items: flex-start;
     cursor: pointer;
 }
 
+<<<<<<< HEAD
 
+=======
+#profileBox{
+    background-color: white;
+    width: 420px;
+    min-height: 550px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 16px;
+    text-align: center;
+}
+>>>>>>> ecd8e4d245b7b54b670f9c53aaa8be615fcd1489
 
+.profileInfo{
+    text-align: left;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+}
 
-.contact-section {
-    max-width: 600px;
-    margin: 60px auto !important;
-    background: #ffffff !important;
-    padding: 40px !important;
-    border-radius: 10px !important;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1) !important;
-    text-align: center !important;
+.orders{
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 25px;
+}
+
+.orders th{
+    border: 1px solid #eee;
+    padding: 12px;
+    font-size: 14px;
+    background-color: #eaeaea;
+}
+
+.orders td{
+    border: 1px solid #eee;
+    padding: 12px;
+    font-size: 14px;
+}
+
+.completed{
+    color: green;
+    font-weight: bold;
+    background-color: #e6f4ea;
+    border-radius: 6px;
+    padding: 6px;
+}
+
+.logout:hover{
+    background-color: #c9302c;
+}
+
+.logout{
+    padding: 12px 25px;
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
 }
