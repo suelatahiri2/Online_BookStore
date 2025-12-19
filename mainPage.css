@@ -659,7 +659,7 @@ main {
 .contact-section #contactForm textarea {
     width: 100%;
     padding: 14px 16px;
-    margin-bottom: 1px solid #ccc;
+    margin-bottom: 1px solid 15px;
     border-radius: 10px;
     font-size: 1em;
     box-sizing: border-box;
@@ -690,17 +690,4 @@ main {
     background-color: #a30000;
     transform: translateY(-2px);
     
-}
-.contact-alert {
-    display: none;
-    margin top: 15px;
-    padding: 12px;
-    background-color: #4CAF50;
-    color: white;
-    font-weight: bold;
-    text-align: center;
-    border-radious: 8px;
-}
-#contactForm.sent .contact-alert {
-    display: block;
 }
