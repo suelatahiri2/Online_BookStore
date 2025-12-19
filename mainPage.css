@@ -333,6 +333,7 @@ main {
     color: white;
     font-size: 16px;
     cursor: pointer;
+    border-radius: 12px;
 }
 
 .login-box button:hover {
@@ -355,7 +356,7 @@ main {
     max-width: 700px;
     margin: 50px auto;
     padding: 0 20px;
-    text-align: center;
+    text-align: left;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -363,6 +364,7 @@ main {
     color:  brown;
     font-size: 2.4em;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .contact-section p {
@@ -370,6 +372,7 @@ main {
     font-size: 1.1em;
     color: #555;
     line-height: 2.6;
+    text-align: center;
 }
 
 #contactFrom {
@@ -384,6 +387,7 @@ main {
     margin-bottom: 5px;
     display: block;
     font-size: 1.05em;
+    text-align: left;
 }
 
 #contactForm input,
@@ -395,6 +399,7 @@ main {
     width: 100%;
     box-sizing: border-box;
     transition: border 0.3s ease;
+    text-align: left;
 
 }
 
@@ -403,6 +408,7 @@ main {
     border: 2px solid  brown;
     outline: none;
     box-shadow: 0 0 5px rgba(165, 42, 42, 0.4);
+    text-align: left;
 
 }
 
