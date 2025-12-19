@@ -691,3 +691,16 @@ main {
     transform: translateY(-2px);
     
 }
+.contact-alert {
+    display: none;
+    margin top: 15px;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    border-radious: 8px;
+}
+#contactForm.sent .contact-alert {
+    display: block;
+}
