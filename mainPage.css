@@ -517,10 +517,10 @@ main {
 
 .contact-section {
     max-width: 600px;
-    margin: 60px auto;
-    background: #ffffff;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    margin: 60px auto !important;
+    background: #ffffff !important;
+    padding: 40px !important;
+    border-radius: 10px !important;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1) !important;
+    text-align: center !important;
 }
