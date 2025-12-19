@@ -30,7 +30,9 @@ header nav ul li a {
     text-decoration: none;
     font-weight: bold;
 }
-
+.footer{
+    align-items: end;
+}
 .profile header nav {
     list-style: none;
     display: flex;
