@@ -30,7 +30,6 @@ header nav ul li a {
     text-decoration: none;
     font-weight: bold;
 }
-
 .profile header nav {
     list-style: none;
     display: flex;
@@ -334,6 +333,7 @@ main {
     color: white;
     font-size: 16px;
     cursor: pointer;
+    border-radius: 12px;
 }
 
 .login-box button:hover {
@@ -356,7 +356,7 @@ main {
     max-width: 700px;
     margin: 50px auto;
     padding: 0 20px;
-    text-align: center;
+    text-align: left;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -364,6 +364,7 @@ main {
     color:  brown;
     font-size: 2.4em;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .contact-section p {
@@ -371,6 +372,7 @@ main {
     font-size: 1.1em;
     color: #555;
     line-height: 2.6;
+    text-align: center;
 }
 
 #contactFrom {
@@ -385,6 +387,7 @@ main {
     margin-bottom: 5px;
     display: block;
     font-size: 1.05em;
+    text-align: left;
 }
 
 #contactForm input,
@@ -396,7 +399,14 @@ main {
     width: 100%;
     box-sizing: border-box;
     transition: border 0.3s ease;
+    text-align: left;
 
+}
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
 }
 
 #contactForm input:focus,
@@ -404,6 +414,7 @@ main {
     border: 2px solid  brown;
     outline: none;
     box-shadow: 0 0 5px rgba(165, 42, 42, 0.4);
+    text-align: left;
 
 }
 
@@ -522,6 +533,19 @@ main {
     border-radius: 8px;
     cursor: pointer;
 }
+.contact-section #contactFrom label {
+    display: block;
+    text-align: left;
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-size: 1.05em;
+}
+.contact-page #contactForm input:focus
+.contact-page #contactForm textarea:focus {
+    border: 2px solid brown;
+    outline: none;
+    box-shadow: 0 0 Spx rbga(165, 42, 42, 0.4);
+ }
 
 #profileBox {
     background-color: white;
@@ -605,13 +629,65 @@ main {
     cursor: pointer;
 }
 
+ .contact-page #contactForm button {
+    width: 200px;
+    align-self: center;
+    background-color: brown;
+    color: white;
+    border: none;
+    padding: 16px;
+    font-size: 1.1em;
+    border-radius: 10px;
+    cursor: pointer;
+ }
 
-.contact-section {
-    max-width: 600px;
-    margin: 60px auto !important;
-    background: #ffffff !important;
-    padding: 40px !important;
-    border-radius: 10px !important;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1) !important;
-    text-align: center !important;
+ .contact-page #contactForm button:hover {
+    background-color: #ff1a1a;
+    transform: translateY(-2px);
+ }
+ .contact-section #contactForm label{
+    display: flex;
+    flex-direction: column;
+ }
+ .contact-section #contactForm label{
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    text-align: left;
+}
+.contact-section #contactForm input,
+.contact-section #contactForm textarea {
+    width: 100%;
+    padding: 14px 16px;
+    margin-bottom: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1em;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.contact-section #contactForm input:focus,
+.contact-section #contactForm textarea:focus {
+    border: 2px solid brown;
+    outline: none;
+    box-shadow: 0 0 5px rgba(165, 42, 42, 0.4);
+
+}
+.about-section #contactForm button {
+    margin-top: 20px;
+    align-self: center;
+    width: 200px;
+    background-color: brown;
+    color: white;
+    border: none;
+    padding: 16px;
+    font-size: 1.1em;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.contact-section #contactForm button:hover {
+    background-color: #a30000;
+    transform: translateY(-2px);
+    
 }
