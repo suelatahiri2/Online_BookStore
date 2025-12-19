@@ -513,3 +513,14 @@ main {
 }
 
 >>>>>>>9ff81f0a6f59dad92854c9684c7d250c0987d0bd
+
+
+.contact-cection {
+    max-width: 600px;
+    margin: 60px auto;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
