@@ -95,3 +95,29 @@ function logout(){
     loginBox.style.display = "block";
 >>>>>>> ecd8e4d245b7b54b670f9c53aaa8be615fcd1489
 }
+const contactForm = document.getElementById("contactForm");
+
+if (contactForm){
+    contactForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const name = document.getElementById("name").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const subject = document.getElementById("subject").value.trim();
+        const message = document.getElementById("message").value.trim();
+
+        if (name === "" || email === "" || subject === "" || message === "" ){
+            alert("Please fill out all fields");
+            return;
+        }
+        if (!email.includes("@")){
+            alert("Email is not valid");
+            return;
+        }
+         
+        alert("Your message has been sent successfully!")
+
+        contactForm.reset();
+    }
+)
+}
