@@ -214,6 +214,7 @@ main {
     color:  brown;
 }
 
+
 .about-section{
     background-color: #a35d4c;
     border-radius: 40px;
@@ -238,7 +239,7 @@ main {
     flex-wrap: wrap;
     gap: 40px;
     align-items: flex-start;
-    
+
 }
 
 .about-text {
@@ -246,7 +247,7 @@ main {
     min-width: 900px;
     text-align: left;
     line-height: 60px;
-   
+
 }
 
 .about-text h2 {
@@ -268,7 +269,7 @@ main {
     line-height: 40px;
     font-style: oblique;
     font-weight: 300;
-    
+
 }
 
 .about-text ul {
@@ -442,11 +443,12 @@ main {
         padding: 0 15px;
     }
 }
+
 .books-layout {
     display: flex;
     gap: 30px;
     padding: 30px;
-align-items: flex-start;
+    align-items: flex-start;
 }
 
 .sidebar {
@@ -455,7 +457,7 @@ align-items: flex-start;
     padding: 20px;
     border-radius: 10px;
     top: 30px;
-   
+
 }
 
 .sidebar h3 {
@@ -544,6 +546,88 @@ align-items: flex-start;
     outline: none;
     box-shadow: 0 0 Spx rbga(165, 42, 42, 0.4);
  }
+
+#profileBox {
+    background-color: white;
+    width: 420px;
+    min-height: 520px;
+    margin: 80px auto;
+    padding: 35px 30px;
+    border-radius: 18px;
+    text-align: center;
+}
+
+#profileBox{
+    margin-bottom: 15px;
+}
+
+#profileBox h3{
+    margin: 30px 0 15px;
+}
+
+#profileBox button{
+    width: 70%;
+    height: 60px;
+    border-radius: 12px;
+    font-size: 18px;
+}
+
+.profileInfo {
+    text-align: left;
+    margin-bottom: 20px;
+    padding: 25px 0;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+}
+
+.profileInfo p{
+    font-size: 15px;
+    margin: 8px 0;
+}
+
+.orders {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+
+.orders th {
+    border: 1px solid #eee;
+    padding: 14px;
+    font-size: 14px;
+    background-color: brown;
+    color: white;
+}
+
+.orders td {
+    border-bottom: 1px solid #eee;
+    padding: 14px;
+    font-size: 14px;
+}
+
+.completed {
+    color: green;
+    font-weight: bold;
+    background-color: #e6f4ea;
+    border-radius: 6px;
+    padding: 6px;
+}
+
+.logout:hover {
+    background-color: #c9302c;
+}
+
+.logout {
+    padding: 10px;
+    margin-top: 35px;
+    font-size: 15px;
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
 
  .contact-page #contactForm button {
     width: 200px;
