@@ -401,6 +401,12 @@ main {
     text-align: left;
 
 }
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+}
 
 #contactForm input:focus,
 #contactForm textarea:focus {
