@@ -215,7 +215,11 @@ main {
     color:  brown;
 }
 
+.about-section{
+    background-color: #a35d4c;
+    border-radius: 40px;
 
+}
 
 .about-section ul {
     list-style-type: disc;
@@ -226,7 +230,7 @@ main {
     width: 100%;
     max-width: 600px;
     display: block;
-    margin: 30px auto;
+    margin: 10px auto;
     border-radius: 12px;
 }
 
@@ -234,12 +238,16 @@ main {
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
-    align-items: center;
+    align-items: flex-start;
+    
 }
 
 .about-text {
     flex: 1;
-    min-width: 300px;
+    min-width: 900px;
+    text-align: left;
+    line-height: 60px;
+   
 }
 
 .about-text h2 {
@@ -251,27 +259,31 @@ main {
 .about-text h3 {
     color:  brown;
     font-size: 30px;
-    margin-top: 70px;
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 
 .about-text p {
     font-weight: bold;
     font-size: 20px;
-    line-height: 20px;
+    line-height: 40px;
+    font-style: oblique;
+    font-weight: 300;
+    
 }
 
 .about-text ul {
     list-style-type: disc;
     padding-left: 20px;
     font-size: 20px;
-    line-height: 25px;
+    line-height: 40px;
+    font-style: oblique;
     color: black;
 }
 
 .about-image {
     flex: 1;
-    min-width: 300px;
+    min-width: 00px;
 
 }
 
@@ -419,11 +431,11 @@ main {
         padding: 0 15px;
     }
 }
-
-<<<<<<< HEAD>>>>>>>6655c0905304a9f3f8ee5b66954866ff52ea2d3f=======.books-layout {
+.books-layout {
     display: flex;
     gap: 30px;
     padding: 30px;
+align-items: flex-start;
 }
 
 .sidebar {
@@ -431,6 +443,8 @@ main {
     background: #f5f5f5;
     padding: 20px;
     border-radius: 10px;
+    top: 30px;
+   
 }
 
 .sidebar h3 {
@@ -489,12 +503,7 @@ main {
     text-align: center;
 }
 
-.book-card omg {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-    border-radius: 10px;
-}
+
 
 .book-card span {
     display: block;
@@ -512,7 +521,7 @@ main {
     cursor: pointer;
 }
 
->>>>>>>9ff81f0a6f59dad92854c9684c7d250c0987d0bd
+
 
 
 .contact-section {

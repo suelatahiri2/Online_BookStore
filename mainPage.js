@@ -70,6 +70,7 @@ function addToCart(){
     alert("Book added to cart!")
 <<<<<<< HEAD
 
+
 =======
 >>>>>>> 123fcc523485c6b685a713522ebcabb4f6a490af
 }
