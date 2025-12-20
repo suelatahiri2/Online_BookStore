@@ -87,6 +87,5 @@ function logout(){
     if (!loginBox || !profileBox) return;
 
     profileBox.style.display = "none";
-    loginBox.style.display = "block";
-
+    loginBox.style.display = "block"
 }

@@ -6,13 +6,26 @@
 }
 
 :root{
-    --primary: brown; /* warm deep brown */
-    --secondary: #a35d4c; /* muted terracotta */
-    --accent: #f7efe8; /* warm cream */
+    --primary: brown;
+    --secondary: #a35d4c; 
+    --accent: #f7efe8; 
     --bg: #ffffff;
     --text: #222222;
     --muted: #555555;
 }
+
+.welcomeText{
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.welcomeText1{
+    flex: 1;
+    font-size: 30px;
+    margin-top: 0;
+}
+
 
 header {
     background-color: var(--primary);
@@ -141,6 +154,18 @@ main {
     justify-content: center;
     align-items: center;
 }
+
+.welcomeText{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px;
+}
+
+.welcomeText h1{
+    margin-bottom: 10px;
+}
+
 
 
 footer {
