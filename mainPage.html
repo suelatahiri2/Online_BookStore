@@ -5,13 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BookStore - Home</title>
+    <meta name="description" content="Online Book Store — discover, browse and buy books. Featured selections, author profiles, and easy checkout.">
+    <meta property="og:title" content="Online Book Store">
+    <meta property="og:description" content="Discover featured books and new arrivals at our online bookstore.">
+    <meta property="og:type" content="website">
     <link rel="stylesheet" href="mainPage.css">
 </head>
 
 <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <header>
         <h1>BookStore</h1>
-        <nav>
+        <nav role="navigation" aria-label="Main Navigation">
             <ul>
                 <li><a href="mainPage.html">Home</a></li>
                 <li><a href="aboutPage.html">About</a></li>
@@ -23,22 +28,16 @@
     </header>
 
     <main>
-        <div class="slideshow-container">
-
+        <section id="main-content" class="slideshow-container" role="region" aria-label="Featured books slideshow">
             <div class="slides">
-                <img class="slide" src="images/img1.jpg" alt="">
-                <img class="slide" src="images/img2.jpg" alt="">
-                <img class="slide" src="images/img3.jpg" alt="">
-        </div>
- 
+                <img class="slide" src="images/img1.jpg" alt="Featured book 1 cover" loading="lazy">
+                <img class="slide" src="images/img2.jpg" alt="Featured book 2 cover" loading="lazy">
+                <img class="slide" src="images/img3.jpg" alt="Featured book 3 cover" loading="lazy">
+            </div>
 
-        <button class="nav prev" onclick="changeSlide(-1)">❮</button>
-        <button class="nav next" onclick="changeSlide(1)">❯</button>
-
-       
-
-      </div>
-      
+            <button class="nav prev" type="button" aria-label="Previous slide" onclick="changeSlide(-1)">❮</button>
+            <button class="nav next" type="button" aria-label="Next slide" onclick="changeSlide(1)">❯</button>
+        </section>
 
     </main>
     
@@ -47,6 +46,6 @@
 
     </footer>
 
-<script src="js/mainPage.js"></script>
+<script src="mainPage.js" defer></script>
 </body>
 </html>
