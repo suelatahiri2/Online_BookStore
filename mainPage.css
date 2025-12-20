@@ -41,11 +41,11 @@ header nav ul li a {
     padding: 6px 8px;
     border-radius: 4px;
 }
-header nav ul li a.active,
+
 header nav ul li a[aria-current="page"]{
     background: rgba(255,255,255,0.08);
 }
-}
+
 .profile header nav {
     list-style: none;
     display: flex;
@@ -473,13 +473,9 @@ footer {
 
 @media (max-width: 480px){
     .slideshow-container{ height: 80vw; }
-    header{ padding: 12px; }
-    header nav ul{ gap: 12px; }
-}
-    transition: border 0.3s ease;
-    text-align: left;
 
 }
+
 #contactForm {
     display: flex;
     flex-direction: column;
@@ -487,7 +483,6 @@ footer {
     text-align: center;
 }
 
-#contactForm input:focus,
 #contactForm textarea:focus {
     border: 2px solid  brown;
     outline: none;
@@ -770,10 +765,7 @@ footer {
     transform: translateY(-2px);
     
 }
-<<<<<<< HEAD
-=======
 
 #contactForm.sent .contact-alert {
     display: block;
 }
->>>>>>> 1ff9bb6ff7816f9b3bf50a34b5814767b4af7346
