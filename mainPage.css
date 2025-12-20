@@ -5,25 +5,35 @@
     font-family: Arial, sans-serif;
 }
 
-:root{
+:root {
     --primary: brown;
-    --secondary: #a35d4c; 
-    --accent: #f7efe8; 
+    --secondary: #a35d4c;
+    --accent: #f7efe8;
     --bg: #ffffff;
     --text: #222222;
     --muted: #555555;
 }
 
-.welcomeText{
-    font-size: 60px;
-    font-weight: bold;
-    margin-bottom: 20px;
+.welcomeText {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+    padding-left: 20px;
 }
 
-.welcomeText1{
+.welcomeText h1 {
+    font-weight: bold;
+    font-size: 60px;
     flex: 1;
-    font-size: 30px;
-    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.welcomeText p {
+    font-size: 20px;
+    flex: 1;
+    margin: 0;
+    padding-top: 15px;
 }
 
 
@@ -55,8 +65,8 @@ header nav ul li a {
     border-radius: 4px;
 }
 
-header nav ul li a[aria-current="page"]{
-    background: rgba(255,255,255,0.08);
+header nav ul li a[aria-current="page"] {
+    background: rgba(255, 255, 255, 0.08);
 }
 
 .profile header nav {
@@ -91,7 +101,7 @@ header nav ul li a[aria-current="page"]{
     height: 100%;
     min-width: 80%;
     margin: 0 10px;
-    opacity: 0.5;
+    opacity: 0.85;
     border-radius: 12px;
     object-fit: cover;
     transition: all 0.5s ease;
@@ -106,7 +116,6 @@ header nav ul li a[aria-current="page"]{
 .slide.active {
     opacity: 1;
     transform: scale(1.1);
-
     z-index: 1;
 }
 
@@ -155,18 +164,16 @@ main {
     align-items: center;
 }
 
-.welcomeText{
+.welcomeText {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding-left: 20px;
 }
 
-.welcomeText h1{
+.welcomeText h1 {
     margin-bottom: 10px;
 }
-
-
 
 footer {
     display: flex;
@@ -197,8 +204,9 @@ footer {
     text-align: left;
     background-color: var(--accent);
     border-radius: 20px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
 }
+
 .about-section h2 {
     color: var(--primary);
     font-size: 2.2rem;
@@ -253,7 +261,7 @@ footer {
 
 .profile button {
     margin-top: 10px;
-    color:  brown;
+    color: brown;
 }
 
 
@@ -281,6 +289,7 @@ footer {
     color: var(--text);
     padding-right: 12px;
 }
+
 .about-text h2 {
     color: var(--primary);
     font-size: 1.6rem;
@@ -313,14 +322,14 @@ footer {
 .about-image img {
     width: 100%;
     border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
     display: block;
 }
 
 .login-box h2 {
     margin-bottom: 20px;
     font-size: 24px;
-    color:  brown;
+    color: brown;
 }
 
 .login-box {
@@ -384,7 +393,7 @@ footer {
 }
 
 .contact-section h2 {
-    color:  brown;
+    color: brown;
     font-size: 2.4em;
     margin-bottom: 10px;
     text-align: center;
@@ -424,7 +433,7 @@ footer {
 
 }
 
-.skip-link{
+.skip-link {
     position: absolute;
     left: -999px;
     top: auto;
@@ -432,7 +441,8 @@ footer {
     height: 1px;
     overflow: hidden;
 }
-.skip-link:focus{
+
+.skip-link:focus {
     left: 10px;
     top: 10px;
     width: auto;
@@ -446,7 +456,7 @@ footer {
 }
 
 
-.slideshow-container{
+.slideshow-container {
     position: relative;
     width: 100%;
     max-width: 1100px;
@@ -454,13 +464,15 @@ footer {
     margin: 50px auto;
     overflow: hidden;
 }
-.slideshow-container .slides{
+
+.slideshow-container .slides {
     display: flex;
     width: 100%;
     height: 100%;
     transition: transform 0.5s ease;
 }
-.slideshow-container .slide{
+
+.slideshow-container .slide {
     flex: 0 0 100%;
     width: 100%;
     height: 100%;
@@ -469,17 +481,18 @@ footer {
     border-radius: 12px;
     transition: opacity 0.4s ease, transform 0.4s ease;
 }
-.slideshow-container .slide.active{
+
+.slideshow-container .slide.active {
     opacity: 1;
     transform: scale(1);
     z-index: 1;
 }
 
-.slideshow-container .nav{
+.slideshow-container .nav {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0,0,0,0.45);
+    background-color: rgba(0, 0, 0, 0.45);
     color: #fff;
     border: none;
     font-size: 20px;
@@ -488,16 +501,31 @@ footer {
     z-index: 2;
     border-radius: 4px;
 }
-.slideshow-container .nav.prev{ left: 12px; }
-.slideshow-container .nav.next{ right: 12px; }
 
-@media (max-width: 768px){
-    .slideshow-container{ height: 60vw; margin: 30px auto; }
-    .about-text{ min-width: unset; line-height: 1.4; }
+.slideshow-container .nav.prev {
+    left: 12px;
 }
 
-@media (max-width: 480px){
-    .slideshow-container{ height: 80vw; }
+.slideshow-container .nav.next {
+    right: 12px;
+}
+
+@media (max-width: 768px) {
+    .slideshow-container {
+        height: 60vw;
+        margin: 30px auto;
+    }
+
+    .about-text {
+        min-width: unset;
+        line-height: 1.4;
+    }
+}
+
+@media (max-width: 480px) {
+    .slideshow-container {
+        height: 80vw;
+    }
 
 }
 
@@ -509,7 +537,7 @@ footer {
 }
 
 #contactForm textarea:focus {
-    border: 2px solid  brown;
+    border: 2px solid brown;
     outline: none;
     box-shadow: 0 0 5px rgba(165, 42, 42, 0.4);
     text-align: left;
@@ -517,7 +545,7 @@ footer {
 }
 
 #contactForm button {
-    background-color:  brown;
+    background-color: brown;
     color: white;
     border: none;
     padding: 16px;
@@ -560,7 +588,7 @@ footer {
 
 .sidebar h3 {
     margin-bottom: 15px;
-    color:  brown;
+    color: brown;
 }
 
 .sidebar ul {
@@ -575,13 +603,13 @@ footer {
 }
 
 .sidebar ul li:hover {
-    background:  brown;
+    background: brown;
     color: white;
 }
 
 .books-content {
     flex: 1;
-   
+
 }
 
 .books-hero {
@@ -625,13 +653,14 @@ footer {
 }
 
 .book-card button {
-    background:  brown;
+    background: brown;
     color: white;
     border: none;
     padding: 10px;
     border-radius: 8px;
     cursor: pointer;
 }
+
 .contact-section #contactFrom label {
     display: block;
     text-align: left;
@@ -639,12 +668,12 @@ footer {
     margin-bottom: 5px;
     font-size: 1.05em;
 }
-.contact-page #contactForm input:focus
-.contact-page #contactForm textarea:focus {
+
+.contact-page #contactForm input:focus .contact-page #contactForm textarea:focus {
     border: 2px solid brown;
     outline: none;
     box-shadow: 0 0 Spx rbga(165, 42, 42, 0.4);
- }
+}
 
 #profileBox {
     background-color: white;
@@ -656,15 +685,15 @@ footer {
     text-align: center;
 }
 
-#profileBox{
+#profileBox {
     margin-bottom: 15px;
 }
 
-#profileBox h3{
+#profileBox h3 {
     margin: 30px 0 15px;
 }
 
-#profileBox button{
+#profileBox button {
     width: 70%;
     height: 60px;
     border-radius: 12px;
@@ -679,7 +708,7 @@ footer {
     border-radius: 10px;
 }
 
-.profileInfo p{
+.profileInfo p {
     font-size: 15px;
     margin: 8px 0;
 }
@@ -728,7 +757,7 @@ footer {
     cursor: pointer;
 }
 
- .contact-page #contactForm button {
+.contact-page #contactForm button {
     width: 200px;
     align-self: center;
     background-color: brown;
@@ -738,22 +767,25 @@ footer {
     font-size: 1.1em;
     border-radius: 10px;
     cursor: pointer;
- }
+}
 
- .contact-page #contactForm button:hover {
+.contact-page #contactForm button:hover {
     background-color: #ff1a1a;
     transform: translateY(-2px);
- }
- .contact-section #contactForm label{
+}
+
+.contact-section #contactForm label {
     display: flex;
     flex-direction: column;
- }
- .contact-section #contactForm label{
+}
+
+.contact-section #contactForm label {
     display: block;
     margin-bottom: 8px;
     font-weight: 600;
     text-align: left;
 }
+
 .contact-section #contactForm input,
 .contact-section #contactForm textarea {
     width: 100%;
@@ -772,6 +804,7 @@ footer {
     box-shadow: 0 0 5px rgba(165, 42, 42, 0.4);
 
 }
+
 .about-section #contactForm button {
     margin-top: 20px;
     align-self: center;
@@ -788,7 +821,7 @@ footer {
 .contact-section #contactForm button:hover {
     background-color: #a30000;
     transform: translateY(-2px);
-    
+
 }
 
 #contactForm.sent .contact-alert {
