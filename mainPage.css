@@ -1,9 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Merriweather:wght@400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
 }
+
+
+body {
+    font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Merriweather', Georgia, 'Times New Roman', serif;
+    color: var(--primary);
+}
+
+h1{ font-size: 2.2rem; line-height: 1.08; font-weight:700; }
+h2{ font-size: 1.6rem; line-height: 1.15; font-weight:700; }
+h3{ font-size: 1.1rem; line-height: 1.25; font-weight:600; color: var(--secondary); }
+
+p, li, a, button, input { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; }
 
 :root {
     --primary: brown;
@@ -45,6 +66,13 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+
+
+header h1 { color:
+     #ffffff;
+      margin: 0; 
+      font-weight: 800;
+     }
 
 header.logo {
     font-size: 1.5em;
@@ -171,7 +199,7 @@ main {
     padding: 8px 12px;
 }
 
-/* Footer element styling for consistency */
+
 footer{
     background: var(--primary, #6b3e26);
     color: #fff;
@@ -191,7 +219,7 @@ footer a:hover{ text-decoration: underline; color: #fff; }
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0, 5);
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
     padding: 10px;
@@ -668,7 +696,7 @@ footer a:hover{ text-decoration: underline; color: #fff; }
 }
 
 .books-hero {
-    background: linear-gradient(to right, brown, #ff80008e);
+    background: linear-gradient(to left, brown, #ff80008e);
     color: white;
     padding: 40px;
     border-radius: 15px;
