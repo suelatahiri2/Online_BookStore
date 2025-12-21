@@ -372,6 +372,58 @@ footer {
     background-color: #a30000;
 }
 
+/* Signup prompt under login */
+.signup-prompt{
+    margin-top: 12px;
+    font-size: 0.95rem;
+    color: var(--muted, #555);
+    text-align: center;
+}
+.signup-prompt a{
+    color: var(--primary, #6b3e26);
+    text-decoration: none;
+    font-weight: 700;
+}
+.signup-prompt a:hover{
+    text-decoration: underline;
+}
+
+/* Modal (signup) styles */
+.modal{
+    position: fixed;
+    inset: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.45);
+    z-index: 10000;
+}
+.modal[aria-hidden="false"]{ display: flex; }
+.modal-content{
+    background: var(--bg, #fff);
+    color: var(--text, #222);
+    padding: 20px 22px;
+    width: 90%;
+    max-width: 420px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    position: relative;
+}
+.modal-close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+.modal-content h2{ margin-bottom: 12px; color: var(--primary); }
+.modal-content label{ display:block; margin-top:10px; font-weight:600; }
+.modal-content input{ width:100%; padding:10px; margin-top:6px; border-radius:6px; border:1px solid #ccc; }
+.modal-content .primary{ margin-top:16px; width:100%; padding:12px; background:var(--primary); color:#fff; border:none; border-radius:8px; cursor:pointer; }
+.modal-content .primary:hover{ background: #55301f; }
+
 .foto {
     margin: 0;
     position: fixed;

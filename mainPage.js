@@ -89,3 +89,37 @@ function logout(){
     profileBox.style.display = "none";
     loginBox.style.display = "block"
 }
+
+// Signup modal behavior
+document.addEventListener('DOMContentLoaded', function(){
+    const openBtn = document.getElementById('openSignup');
+    const modal = document.getElementById('signupModal');
+    const closeBtn = modal ? modal.querySelector('.modal-close') : null;
+    const signupForm = document.getElementById('signupForm');
+
+    function openModal(){
+        if(!modal) return;
+        modal.setAttribute('aria-hidden','false');
+        const first = modal.querySelector('input');
+        if(first) first.focus();
+    }
+    function closeModal(){
+        if(!modal) return;
+        modal.setAttribute('aria-hidden','true');
+        if(openBtn) openBtn.focus();
+    }
+
+    if(openBtn) openBtn.addEventListener('click', function(e){ e.preventDefault(); openModal(); });
+    if(closeBtn) closeBtn.addEventListener('click', closeModal);
+    if(modal) modal.addEventListener('click', function(e){ if(e.target === modal) closeModal(); });
+
+    if(signupForm){
+        signupForm.addEventListener('submit', function(e){
+            e.preventDefault();
+            // Simple client-side feedback — in real app, submit to server
+            alert('Account created — you can now log in.');
+            signupForm.reset();
+            closeModal();
+        });
+    }
+});
