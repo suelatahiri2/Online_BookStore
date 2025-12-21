@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Merriweather:wght@400;700&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -15,24 +13,34 @@ body {
     line-height: 1.6;
 }
 
-h1,h2,h3,h4,h5,h6{
-    font-family: 'Merriweather', Georgia, 'Times New Roman', serif;
-    color: var(--primary);
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Times New Roman', Georgia, serif;
+    color: brown;
 }
 
-h1{ font-size: 2.2rem; line-height: 1.08; font-weight:700; }
-h2{ font-size: 1.6rem; line-height: 1.15; font-weight:700; }
-h3{ font-size: 1.1rem; line-height: 1.25; font-weight:600; color: var(--secondary); }
+h1 {
+    font-size: 32px;
+    line-height: 1.1;
+    font-weight: 700;
+}
 
-p, li, a, button, input { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; }
+h2 {
+    font-size: 22px;
+    line-height: 1.15;
+    font-weight: 700;
+}
 
-:root {
-    --primary: brown;
-    --secondary: #a35d4c;
-    --accent: #f7efe8;
-    --bg: #ffffff;
-    --text: #222222;
-    --muted: #555555;
+h3 {
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #a35d4c;
+}
+
+p, li, a, button, input {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222222;
+    font-size: 16px;
 }
 
 .welcomeText {
@@ -200,19 +208,22 @@ main {
 }
 
 
-footer{
+footer {
     background: var(--primary, #6b3e26);
     color: #fff;
-    padding: 16px 12px;
+    padding: 8px 10px;
     text-align: center;
+    font-size: 0.9rem;
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.04);
+}
+footer p { margin: 0; }
+footer a {
+    color: rgba(255,255,255,0.95);
+    text-decoration: none;
+    font-weight: 600;
     font-size: 0.95rem;
-    box-shadow: 0 -4px 14px rgba(0,0,0,0.06);
 }
-footer p{ margin: 0; }
-footer a{ color: rgba(255,255,255,0.95); text-decoration: none; font-weight: 600; }
-footer a:hover{ text-decoration: underline; color: #fff; }
-    color: white;
-}
+footer a:hover { text-decoration: underline; color: #fff; }
 
 
 .slider button {
@@ -913,4 +924,13 @@ footer a:hover{ text-decoration: underline; color: #fff; }
 
 #contactForm.sent .contact-alert {
     display: block;
+}
+
+:root {
+    --primary: brown;
+    --secondary: #a35d4c;
+    --accent: #f7efe8;
+    --bg: #ffffff;
+    --text: #222222;
+    --muted: #555555;
 }
