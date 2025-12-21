@@ -34,6 +34,27 @@
             <input type="email" id="email" placeholder="Email" required>
             <input type="password" id="password" placeholder="Password" required>
             <button onclick="login()">Login</button>
+            <p class="signup-prompt">You don't have an account? <a href="#" id="openSignup">Create one</a></p>
+        </div>
+
+        <!-- Signup Modal -->
+        <div id="signupModal" class="modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="signupTitle">
+            <div class="modal-content">
+                <button class="modal-close" aria-label="Close signup form">×</button>
+                <h2 id="signupTitle">Create an account</h2>
+                <form id="signupForm">
+                    <label for="signupName">Full name</label>
+                    <input id="signupName" name="name" type="text" required>
+
+                    <label for="signupEmail">Email</label>
+                    <input id="signupEmail" name="email" type="email" required>
+
+                    <label for="signupPassword">Password</label>
+                    <input id="signupPassword" name="password" type="password" required>
+
+                    <button type="submit" class="primary">Create account</button>
+                </form>
+            </div>
         </div>
 
         <div id="profileBox" style="display: none;">
