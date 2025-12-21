@@ -175,11 +175,25 @@ main {
     margin-bottom: 10px;
 }
 
-footer {
+.footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--primary);
+    padding: 8px 12px;
+}
+
+/* Footer element styling for consistency */
+footer{
+    background: var(--primary, #6b3e26);
+    color: #fff;
+    padding: 16px 12px;
+    text-align: center;
+    font-size: 0.95rem;
+    box-shadow: 0 -4px 14px rgba(0,0,0,0.06);
+}
+footer p{ margin: 0; }
+footer a{ color: rgba(255,255,255,0.95); text-decoration: none; font-weight: 600; }
+footer a:hover{ text-decoration: underline; color: #fff; }
     color: white;
 }
 
@@ -372,7 +386,7 @@ footer {
     background-color: #a30000;
 }
 
-/* Signup prompt under login */
+
 .signup-prompt{
     margin-top: 12px;
     font-size: 0.95rem;
@@ -388,7 +402,7 @@ footer {
     text-decoration: underline;
 }
 
-/* Modal (signup) styles */
+
 .modal{
     position: fixed;
     inset: 0;
@@ -683,8 +697,12 @@ footer {
 
 .books-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+}
+
+@media (max-width: 720px) {
+    .books-grid { grid-template-columns: 1fr; }
 }
 
 .book-card {

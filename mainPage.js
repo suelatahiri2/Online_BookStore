@@ -22,7 +22,7 @@ function changeSlide(step){
 }
 showSlide();
 
-//loginform
+
 
 function Login(){
     document.getElementById("LoginBox").style.display = "none";
@@ -35,25 +35,29 @@ function logout(){
 }
 
 function filterBooks(category){
-    const books =document.querySelectorAll(".book-card");
-
-    books.forEach(book =>{
-        if(category === "all" || book.CDATA_SECTION_NODE.category === category){
-            book.style.display= "block"
-        } else{
-            book.style.display="none";
-
+    const books = document.querySelectorAll('.book-card');
+    const cat = (category || 'all').toLowerCase();
+    books.forEach(book => {
+        const bcat = (book.dataset.category || '').toLowerCase();
+        if (cat === 'all' || !cat) {
+            book.style.display = '';
+        } else if (bcat === cat) {
+            book.style.display = '';
+        } else {
+            book.style.display = 'none';
         }
-    })
+    });
 }
 
 function searchBooks (){
-    const inpput= document.getElementById("searchInput").value.toLowerCase();
-    const books = document.querySelectorAll(".book-card");
+    const inputEl = document.getElementById('searchInput');
+    if (!inputEl) return;
+    const q = inputEl.value.trim().toLowerCase();
+    const books = document.querySelectorAll('.book-card');
     books.forEach(book =>{
-        const title = book.querySelector("h4").innerText.toLowerCase();
-        book.style.display = title.includes (input) ? "block" :"none";
-
+        const titleEl = book.querySelector('h4') || book.querySelector('h3') || book.querySelector('.title');
+        const title = titleEl ? titleEl.innerText.toLowerCase() : '';
+        book.style.display = title.includes(q) ? '' : 'none';
     });
 
 }
@@ -116,10 +120,27 @@ document.addEventListener('DOMContentLoaded', function(){
     if(signupForm){
         signupForm.addEventListener('submit', function(e){
             e.preventDefault();
-            // Simple client-side feedback — in real app, submit to server
+      
             alert('Account created — you can now log in.');
             signupForm.reset();
             closeModal();
+        });
+    }
+
+    // Sidebar category click handlers: add active state and call filterBooks
+    const sidebar = document.querySelector('.sidebar');
+    if (sidebar) {
+        sidebar.querySelectorAll('li').forEach(li => {
+            li.addEventListener('click', function(){
+                const category = this.textContent.trim().toLowerCase();
+                // normalize label -> category value (handle 'all')
+                const map = { 'all': 'all', 'fiction': 'fiction', 'none-fiction': 'non-fiction', 'non-fiction': 'non-fiction', 'children': 'children', 'academic': 'academic', 'business': 'business' };
+                const cat = map[category] || category;
+                // set active class
+                sidebar.querySelectorAll('li').forEach(x => x.classList.remove('active'));
+                this.classList.add('active');
+                filterBooks(cat);
+            });
         });
     }
 });
