@@ -12,7 +12,7 @@ if(isset($_POST['add'])){
 
 if(isset($_GET['delete'])){
     $id = $_GET['delete'];
-    $conn->query("DELETE FROM users WHERE id-$id");
+    $conn->query("DELETE FROM users WHERE id=$id");
 }
 
 if(isset($_POST['update'])){
@@ -67,9 +67,9 @@ if(isset($_GET['edit'])){
              <td>{$row['name']} </td>
              <td>{$row['email']} </td>
              <td> 
-             <a href='uders.php?edit= {$row['id']}' >Edit</a> |
-             <a href=''users.php?delete={$row['id']}'>Delete</a>
-             /td>
+             <a href='users.php?edit= {$row['id']}' >Edit</a> |
+             <a href='users.php?delete={$row['id']}'>Delete</a>
+             </td>
         </tr>";
     }
 
