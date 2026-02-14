@@ -5,7 +5,7 @@ if(isset($_POST['add'])){
     $name = $_POST['name'];
     $email = $_POST['email'];
     $password = $_POST['password'];
-    $conn->query("INSERT INTO users(name,email,password)VALUES('$name,$email,$password')");
+    $conn->query("INSERT INTO users(name,email,password)VALUES('$name','$email','$password')");
 
 }
 
