@@ -26,9 +26,9 @@ if(isset($_POST['update'])){
 
 $edit_user = null;
 if(isset($_GET['edit'])){
-    $id = $_GET['edit'];
-    $res = $conn->query("SELECT * FROM users Where id=$id");
-    $edit_user = $res-> fetch_assoc();
+    $id =$_GET['edit'];
+    $res =$conn->query("SELECT * FROM users Where id=$id");
+    $edit_user =$res-> fetch_assoc();
 
 }
 ?>
@@ -67,7 +67,7 @@ if(isset($_GET['edit'])){
              <td>{$row['name']} </td>
              <td>{$row['email']} </td>
              <td> 
-             <a href='users.php?edit= {$row['id']}' >Edit</a> |
+             <a href='users.php?edit={$row['id']}'>Edit</a> |
              <a href='users.php?delete={$row['id']}'>Delete</a>
              </td>
         </tr>";
