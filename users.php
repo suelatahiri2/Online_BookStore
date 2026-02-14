@@ -1,11 +1,14 @@
 <?php 
-include"../includes/db.php";
+include"../includes/config.php";
 
 if(isset($_POST['add'])){
     $name = $_POST['name'];
     $email = $_POST['email'];
-    $password = $_POST['password'];
-    $conn->query("INSERT INTO users(name,email,password)VALUES('$name','$email','$password')");
+    $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
+
+
+    $conn->query("INSERT INTO users(name,email,password)
+    VALUES('$name','$email','$password')");
 
 }
 
@@ -19,7 +22,11 @@ if(isset($_POST['update'])){
     $id = $_POST['id'];
     $name = $_POST['name'];
     $email = $_POST['email'];
-    $conn->query("UPDATE users SET name='$name', email='$email' WHERE id=$id");
+    
+    $conn->query("UPDATE users 
+    SET name='$name', email='$email' 
+    WHERE id=$id");
+    
     header("Location: users.php");
     exit;
 }
